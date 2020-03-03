@@ -1,3 +1,4 @@
+function jumpingOnClouds(c) {
 let arr = [...c]
     let index = 0;
     let move = 0;
@@ -31,3 +32,4 @@ let arr = [...c]
             }
     }
     return move
+}
