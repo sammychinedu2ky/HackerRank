@@ -1,0 +1,20 @@
+function countingValleys(n, s) {
+    let valleys = 0;
+    let mountain;
+    let moves = 0
+    for (let i = 0; i < s.length; i++) {
+
+        if (s[i] == 'U') {
+            ++moves
+            if (moves > 0) mountain = true
+        } else {
+            --moves
+            if (moves < 0) mountain = false
+        }
+        if (moves == 0 && mountain == false) {
+
+            ++valleys
+        }
+    }
+    return valleys
+}
