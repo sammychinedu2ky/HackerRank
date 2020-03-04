@@ -1,0 +1,13 @@
+function repeatedString(s, n) {
+    let lengthA = 0;
+    for (let i = 0; i <= s.length; i++) {
+        if (s[i] == 'a') {
+            if (n % s.length > i) {
+                lengthA += 1 * parseInt(n / s.length) + 1
+            } else {
+                lengthA += 1 * parseInt(n / s.length)
+            }
+        }
+    }
+    return (lengthA)
+}
